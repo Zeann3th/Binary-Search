@@ -11,7 +11,7 @@ def binary_search_engine(numbers, target):
             elif numbers[midpoint] > target:
                 return binary_search_engine(numbers[:midpoint], target)
 
-nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+nums = range(101)
 targ = int(input("Enter a number from 1 to 10 for the engine to guess: "))
 
 binary_search_engine(nums, targ)
